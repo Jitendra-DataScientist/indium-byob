@@ -38,11 +38,13 @@ Candidate SKILLS (these are the ONLY skills you can return in the response):
 JOB REQUIREMENTS: 
 {request.requirements}
 
+Your response should have nothing else apart the python list.
+
 """
 
     try:
         response = chat(
-            model='gemma3:12b',
+            model='gemma3:latest',
             messages=[
                 {"role": "user", "content": prompt}
             ]
