@@ -13,7 +13,7 @@ async def generate_skills(request: QueryRequest):
     prompt = f"""
             Given the following job requirements:
             {request.requirements}
-            Write a list of key technical skills. Only return the key technical skills as a python list. Do not include anythin else.
+            Write a list of key technical skills. Only return the key technical skills as a python list. Do not include anything else.
             Your response should not contain something in brackets like:
             API Testing (REST, SOAP)
             or
